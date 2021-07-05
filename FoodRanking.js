@@ -8,7 +8,7 @@ function setup(){
     upLink[i].addEventListener('click', function(){
       let wrapper = this.parentElement;
 
-      if(wrapper.previewElementSibling){
+      if(wrapper.previousElementSibling){
         wrapper.parentNode.insertBefore(wrapper, wrapper.previousElementSibling)
       }
     })
